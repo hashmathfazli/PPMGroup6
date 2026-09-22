@@ -2786,11 +2786,11 @@ function ExecutiveDashboard({ leads, deals, assessments }: { leads: typeof LEADS
                       {chip("Currency", la.currency)}
                     </div>
                     <p className="text-xs font-bold uppercase tracking-widest" style={{ color: "#1a6fe8" }}>Technical Assessment</p>
-                    {chip("Status", techA?.status ?? "Not Started")}
-                    {techA?.notes && tb("Notes", techA.notes)}
+                    {chip("Tech Status", techA?.status ?? "Not Started")}
+                    {techA?.notes && tb("Tech Notes", techA.notes)}
                     <p className="text-xs font-bold uppercase tracking-widest" style={{ color: "#a78bfa" }}>Financial Assessment</p>
-                    {chip("Status", finA?.status ?? "Not Started")}
-                    {finA?.notes && tb("Notes", finA.notes)}
+                    {chip("Fin Status", finA?.status ?? "Not Started")}
+                    {finA?.notes && tb("Fin Notes", finA.notes)}
                   </>
                 );
               })()}
